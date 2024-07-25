@@ -12,7 +12,7 @@
       <div class="clear"></div>
       <ul class="banners ban1">
           {% for category in categories %}
-            <li><a href="{% url 'category_detail' category.pk %}"><img src="{{ category.image.url }}" alt="{{ category.name }}">{{ category.name }}</a></li>
+            <li><a href="{% url 'category_detail' category.pk %}"><img style="width: 120px; height: 80px" src="{{ category.image.url }}" alt="{{ category.name }}">{{ category.name }}</a></li>
           {% endfor %}
     </ul>
     </div>

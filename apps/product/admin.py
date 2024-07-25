@@ -5,15 +5,29 @@ from .models import *
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ['id','name','slug','image']
+    list_display = ['id',
+                    'name',
+                    'slug',
+                    'image']
+
     prepopulated_fields = {'slug': ('name',)}
 
 
 @admin.register(Food)
 class FoodAdmin(admin.ModelAdmin):
-    list_display = ['id','name','description','price','image','gram','category',]
+    list_display = ['id',
+                    'name',
+                    'description',
+                    'price',
+                    'image',
+                    'gram',
+                    'category',]
 
 
 @admin.register(SpecialOffer)
 class FoodAdmin(admin.ModelAdmin):
-    list_display = ['id','food', 'start_date', 'end_date','description']
+    list_display = ['id',
+                    'food',
+                    'start_date',
+                    'end_date',
+                    'description']

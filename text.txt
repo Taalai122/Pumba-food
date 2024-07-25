@@ -1,0 +1,15 @@
+Venv
+1) python3 -m venv venv             - виртуальное окружение
+2) source venv/bin/activate         - активация виртуального окружения
+
+Django
+1) django-admin startproject название проекта   - создание проекта
+2) django-admin startapp название приложения    - создание внутреннего приложения
+3) python3 manage.py makemigrations             - подготовка к миграции
+4) python3 manage.py migrate                    - миграция в БД
+5) python3 manage.py runserver                  - запуск приложения
+
+PostgreSQL
+1) sudo -u psql                 - заходим в Postgresql
+2) \l                           - узнать какие базы данных есть
+3) CREATE DATABASE название;    - создание базы данных в Postgresql
