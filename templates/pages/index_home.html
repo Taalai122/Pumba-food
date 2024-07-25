@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+  Главная
+{% endblock %}
+
+{% block content %}
+
+<div class="slider_wrapper ">
+                <div id="camera_wrap" class="">
+                <div data-src="{% static 'images/slide.jpg' %}">
+                  <div class="caption fadeIn">
+                    <h2>Fried steak on <br> a grill from beef <span>from $23.99</span></h2>
+                    <a href="#">book now!</a>
+                  </div>
+                </div>
+                <div data-src="{% static 'images/slide1.jpg' %}">
+                  <div class="caption fadeIn">
+                    <h2>Japanese <br>sushi and rolls <span>from $23.99</span></h2>
+                    <a href="#">book now!</a>
+                  </div>
+                </div>
+                <div data-src="{% static 'images/slide2.jpg' %}">
+                  <div class="caption fadeIn">
+                    <h2>Delicious <br>Mexican tacos<span>from $23.99</span></h2>
+                    <a href="#">book now!</a>
+                  </div>
+                </div>
+                <div data-src="{% static 'images/slide3.jpg' %}">
+                  <div class="caption fadeIn">
+                    <h2>Colorful <br>macaroons<span>from $23.99</span></h2>
+                    <a href="#">book now!</a>
+                  </div>
+                </div>
+                <div data-src="{% static 'images/slide4.jpg' %}">
+                  <div class="caption fadeIn">
+                    <h2>Italian brick oven <br>pizza<span>from $23.99</span></h2>
+                    <a href="#">book now!</a>
+                  </div>
+                </div>
+                </div>
+                </div>
+<div class="page1_block">
+            <div class="container_12">
+              <div class="grid_12">
+                <ul class="banners">
+                  <li><a href="#"><img src="{% static 'images/ban_icon1.png' %}" alt="">bbq</a></li>
+                  <li><a href="#"><img src="{% static 'images/ban_icon2.png' %}" alt="">seafood</a></li>
+                  <li><a href="#"><img src="{% static 'images/ban_icon3.png' %}" alt="">salads</a></li>
+                  <li><a href="#"><img src="{% static 'images/ban_icon4.png' %}" alt="">soups</a></li>
+                  <li><a href="#"><img src="{% static 'images/ban_icon5.png' %}" alt="">bakery</a></li>
+                  <li><a href="#"><img src="{% static 'images/ban_icon6.png' %}" alt="">desserts</a></li>
+                  <li><a href="#"><img src="{% static 'images/ban_icon7.png' %}" alt="">drinks</a></li>
+                  <li><a href="#"><img src="{% static 'images/ban_icon8.png' %}" alt="">pizza</a></li>
+                </ul>
+                <div class="clear"></div>
+                <form id="search" action="search.php" method="GET">
+                  <div class="title">Quick search:</div>
+                  <div class="rel">
+                  <label>
+                    <input type="text" name="s" value="Products"
+                    onblur="if (this.value == '') {this.value = 'Products';}"
+              onfocus="if (this.value == 'Products') {this.value = '';}">
+                  </label>
+                  <a onClick="document.getElementById('search').submit()" class="">search</a>
+                  </div>
+                  <div class="clear"></div>
+                </form>
+                <a href="#" class="cut">advanced search</a>
+              </div>
+            </div>
+          </div>
+          <div class="ord">
+            <div class="container_12">
+              <div class="grid_12">
+                <ul>
+                  <li><a href="#" class="maxheight">
+                      <div class="count">01</div>
+                      Enter your <br> Address
+                    </a></li>
+                  <li><a href="#" class="maxheight">
+                      <div class="count">02</div>
+                      Select <br> a Restaurant
+                    </a></li>
+                  <li><a href="#" class="maxheight">
+                      <div class="count">03</div>
+                      Order Online, <br>Enjoy
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+<div class="content">
+    <div class="container_12">
+    <div class="grid_12">
+      <div class="block1">
+        <div class="grid_3 prefix_1 alpha">
+          <h3>gift certificates</h3>
+          Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus. <br> <a href="#" class="btn">get certificate!</a>
+        </div>
+        <div class="grid_3 prefix_1 ">
+          <h3>meet our mobile version</h3>
+          Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus  <br> <a href="#" class="btn">download now!</a>
+        </div>
+        <div class="grid_4 omega">
+          <img src="{% static 'images/mob_img.png' %}" alt="" class="mob_img">
+        </div>
+        <div class="clear"></div>
+        <div id="owl">
+          <div class="item"><a href="#"><img class="" src="{% static 'images/logo1.png' %}" alt=""><img src="{% static 'images/blogo1.png' %}" alt=""></a></div>
+          <div class="item"><a href="#"><img src="{% static 'images/logo2.png' %}" alt=""><img src="{% static 'images/blogo2.png' %}" alt=""></a></div>
+          <div class="item"><a href="#"><img src="{% static 'images/logo3.png' %}" alt=""><img src="{% static 'images/blogo3.png' %}" alt=""></a></div>
+          <div class="item"><a href="#"><img src="{% static 'images/logo4.png' %}" alt=""><img src="{% static 'images/blogo4.png' %}" alt=""></a></div>
+          <div class="item"><a href="#"><img src="{% static 'images/logo5.png' %}" alt=""><img src="{% static 'images/blogo5.png' %}" alt=""></a></div>
+          <div class="item"><a href="#"><img src="{% static 'images/logo6.png' %}" alt=""><img src="{% static 'images/blogo6.png' %}" alt=""></a></div>
+          <div class="item"><a href="#"><img src="{% static 'images/logo7.png' %}" alt=""><img src="{% static 'images/blogo7.png' %}" alt=""></a></div>
+          <div class="item"><a href="#"><img src="{% static 'images/logo1.png' %}" alt=""><img src="{% static 'images/blogo1.png' %}" alt=""></a></div>
+          <div class="item"><a href="#"><img src="{% static 'images/logo2.png' %}" alt=""><img src="{% static 'images/blogo2.png' %}" alt=""></a></div>
+          <div class="item"><a href="#"><img src="{% static 'images/logo3.png' %}" alt=""><img src="{% static 'images/blogo3.png' %}" alt=""></a></div>
+          <div class="item"><a href="#"><img src="{% static 'images/logo4.png' %}" alt=""><img src="{% static 'images/blogo4.png' %}" alt=""></a></div>
+          <div class="item"><a href="#"><img src="{% static 'images/logo5.png' %}" alt=""><img src="{% static 'images/blogo5.png' %}" alt=""></a></div>
+          <div class="item"><a href="#"><img src="{% static 'images/logo6.png' %}" alt=""><img src="{% static 'images/blogo6.png' %}" alt=""></a></div>
+          <div class="item"><a href="#"><img src="{% static 'images/logo7.png' %}" alt=""><img src="{% static 'images/blogo7.png' %}" alt=""></a></div>
+        </div>
+        <div class="clear"></div>
+        <div class="block2">
+          <div class="title"><span>25,000</span> reasons not to cook</div>
+          <p>with 25,000 restaurant menus in  more than 100 US 
+    cities, we give you over a million dishes to choose from</p>
+          <span>Enjoy.</span>
+        </div>      
+      </div>
+      <h3 class="mb0">This week`s specials:<span class="col1">free shipping on orders over $99</span></h3>
+      <div id="owl1">
+
+        {% for offer in special_offers %}
+
+        <div class="item">
+          <a href="#">
+            <div class="bord_img"><span></span>
+              <img src="{{ offer.food.image.url }}" alt="">{{ offer.food.name }}</div>
+            <div class="text1">seafood <br>pasta<span class="col1">{{ offer.food.price }}</span></div>
+          </a>
+        </div>
+
+        {% endfor %}
+
+
+
+
+
+
+      </div>
+    </div>
+    </div>
+  </div>
+  
+
+{% endblock %}
